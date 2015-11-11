@@ -1,0 +1,1 @@
+<script type="text/javascript">$.backstretch("<?php echo($options['webbg_url']); ?>");</script>

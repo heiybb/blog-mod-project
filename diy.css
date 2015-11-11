@@ -1,0 +1,48 @@
+/* 关闭说道 */
+.says{
+	display: none
+}
+
+.comments-area a {
+	font-size:16px;
+	border-bottom:none!important
+}
+
+.comments-area li {
+	display: block
+}
+
+.comment-meta{
+	padding-left:19.6px;
+}
+
+.comment-edit-link{
+	display:none
+}
+
+.replytitle {
+	text-align: center;
+	padding-top:20px;
+	padding-bottom:20px;
+	background: url(https://dn-cdn-blog.qbox.me/wp_theme/images/sidebarline.png) top repeat-x;
+    font-family: 'JosefinSansRegular', "Trebuchet MS", "Microsoft  YaHei", Helvetica, sans-serif;
+    font-size: 20px;
+    color: #BBB;
+    font-weight: bold;
+}
+.comments-count{
+	text-align: center;
+	padding-top:20px;
+	padding-bottom:20px;
+	background: url(https://dn-cdn-blog.qbox.me/wp_theme/images/sidebarline.png) top repeat-x;
+    font-family: 'JosefinSansRegular', "Trebuchet MS", "Microsoft  YaHei", Helvetica, sans-serif;
+    font-size: 20px;
+    color: #BBB;
+    font-weight: bold;
+}
+.avatar {
+	width: 45px;
+	height: 45px;
+	margin-left:-30px!important;
+	border-radius: 100%
+}
