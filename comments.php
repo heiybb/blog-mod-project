@@ -92,7 +92,7 @@ function grin(tag) {
 <?php if ( comments_open() ) : ?>
 	<div id="respond-form">
 		<div class="replytitle"><span>Leave a Reply</span></div>
-		<form style="padding-top:10px" action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">	
+		<form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">	
 			<?php if ( is_user_logged_in() ) : ?>
 				<div class="writerinfo_div">哟，<?php echo $user_identity; ?>欢迎回来！</div>
 			<?php else : ?>

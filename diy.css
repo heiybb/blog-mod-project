@@ -15,7 +15,7 @@
 .comment-num,.replytitle{
 	text-align: center;
 	padding-top:20px;
-	padding-bottom:10px;
+	padding-bottom:20px;
 	background: url(https://dn-cdn-blog.qbox.me/wp_theme/images/sidebarline.png) top repeat-x;
     font-family: 'JosefinSansRegular', "Trebuchet MS", "Microsoft  YaHei", Helvetica, sans-serif;
     font-size: 20px;
@@ -129,7 +129,7 @@
 
 #respond-form textarea {
 	border: 1px solid #cdcdcd;
-    margin-top:20px;
+    margin-top:15px;
     margin-bottom: -15px;
     border-radius: 3px;
     -webkit-border-radius: 3px;

@@ -1,0 +1,1 @@
+UPDATE 表名 SET 字段名 = REPLACE (字段名, 'aaa', 'bbb');
