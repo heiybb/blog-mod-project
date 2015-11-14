@@ -1,48 +1,191 @@
-/* 关闭说道 */
+/*  关闭说道  */
 .says{
 	display: none
 }
-
-.comments-area a {
-	font-size:16px;
-	border-bottom:none!important
+/*  评论区字号16px  */
+.comment-area a{
+	font-size:16px
 }
 
-.comments-area li {
-	display: block
+.comment-area li {
+	display: block;
+	margin-bottom:20px!important
 }
 
-.comment-meta{
-	padding-left:19.6px;
-}
-
-.comment-edit-link{
-	display:none
-}
-
-.replytitle {
+.comment-num,.replytitle{
 	text-align: center;
 	padding-top:20px;
-	padding-bottom:20px;
+	padding-bottom:10px;
 	background: url(https://dn-cdn-blog.qbox.me/wp_theme/images/sidebarline.png) top repeat-x;
     font-family: 'JosefinSansRegular', "Trebuchet MS", "Microsoft  YaHei", Helvetica, sans-serif;
     font-size: 20px;
     color: #BBB;
     font-weight: bold;
 }
-.comments-count{
-	text-align: center;
-	padding-top:20px;
-	padding-bottom:20px;
-	background: url(https://dn-cdn-blog.qbox.me/wp_theme/images/sidebarline.png) top repeat-x;
-    font-family: 'JosefinSansRegular', "Trebuchet MS", "Microsoft  YaHei", Helvetica, sans-serif;
-    font-size: 20px;
-    color: #BBB;
-    font-weight: bold;
-}
+
 .avatar {
-	width: 45px;
-	height: 45px;
-	margin-left:-30px!important;
+	float: left;
+	width: 55px;
+	height: 55px;
+	margin-left:-35px;
 	border-radius: 100%
+}
+
+/*  回复按钮处理
+	comment-reply-link为统一按钮样式(comment-reply-link在reply-top中)
+	reply-bottom为修改评论FORM中的提交按钮的位置  */
+.comment-reply-link {
+	color:#cdcdcd!important;
+	background: transparent!important;
+	padding: .2em 0.5em;
+	border: 1px solid #cdcdcd!important;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px
+}
+
+#reply-bottom{
+	margin-top:20px;
+	margin-bottom:10px;
+}
+
+#reply-top{
+	position:relative;
+	left:30px;
+}
+
+.comment_text p{
+	font-size:16px;
+}
+
+.comment-right{
+	height:50px;
+	position: relative;
+	left:10px;
+}
+
+.comment-author{
+	height:60%;
+	line-height:20px;
+}
+
+.comment-time{
+	height:40%;
+	line-height:12px;
+	font-size:13px!important
+}
+/*  评论内容  */
+.comment_lines p{
+	text-indent: -20px;
+	line-height:1.5em!important;
+	width:80%;
+	word-wrap:break-word;
+	position: relative;
+	left:30px;
+	margin-bottom:10px!important
+}
+/*  未审核通知及内容字体颜色  */
+#uc_com_info p,#uc_com_text p{
+    color:#BBB!important
+}
+/*  未审核内容缩进修复  */
+#uc_com_text p{
+    text-indent: 0px
+}
+
+.reply{
+	position: relative;
+	left:25px
+}
+
+/*  评论表格 */
+.writerinfo_div {
+    margin-bottom: 10px;
+}
+
+.red {
+    color: #F30
+}
+
+#author_info input {
+	border:1px solid #cdcdcd;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+#author_info label {
+    color: #3d3d3d;
+    margin-left: 20px;
+    display: inline;
+    font-size: 13px;
+}
+
+#respond-form textarea {
+	border: 1px solid #cdcdcd;
+    margin-top:20px;
+    margin-bottom: -15px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    overflow: auto;
+    width: 95%;
+    font-size: 13px;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    transition: all 200ms linear;
+    resize: none;
+}
+
+#author_info input[type=text]:focus:valid, #author_info input[type=email]:focus:valid,
+#respond textarea:focus {
+    border: 1px solid #cdcdcd;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px #74a5ff;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px #74a5ff;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px #74a5ff;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+#author_info input[type=email]:focus:invalid {
+    border: 1px solid #e83888;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px #F30;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px #F30;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px #F30;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.yanwenzi {
+    margin-bottom:-15px;
+	padding-top: 10px;
+    width: 95%
+}
+.yanwenzi a {
+    margin-bottom:20px!important;
+    display: inline-block;
+    padding: 5px;
+    font-size:12px;
+    color:#587686
+}
+
+.yanwenzi a:hover {
+    margin-bottom:20px!important;
+    background-color:#EEE;
+    color:#e38383
 }

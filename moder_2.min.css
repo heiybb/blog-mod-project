@@ -665,7 +665,6 @@ img.wp-smiley {
 
 .stumblr-content a {
 	color: #2D709B;
-	border-bottom: 1px dotted #2D709B;
 	vertical-align: baseline;
 	-webkit-transition: all .2s ease;
 	-moz-transition: all .2s ease;
@@ -683,7 +682,6 @@ img.wp-smiley {
 
 .stumblr-content a:hover {
 	text-decoration: none;
-	border-bottom: 1px solid #258FD3;
 	color: #258FD3
 }
 
